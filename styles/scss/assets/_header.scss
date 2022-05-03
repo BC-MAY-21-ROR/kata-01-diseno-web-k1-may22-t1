@@ -1,3 +1,5 @@
-h1 {
-  color: yellow
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
