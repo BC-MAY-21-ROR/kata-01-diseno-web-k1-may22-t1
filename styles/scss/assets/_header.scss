@@ -1,5 +1,49 @@
-.nav-bar {
+header {
+  background-image: url("../../../images/bg-hero-mobile.svg");
+}
+
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &__logo img {
+    width: 110px;
+    height: 18px;
+  }
+  &__button {
+    button {
+      width: 110px;
+      height: 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 13px;
+      border: none;
+      box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+    }
+  }
+}
+
+.title-header {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: $font-family-heading;
+  text-align: center;
+}
+
+.title-text {
+  font-family: $font-family-body;
+  font-size: 19px;
+  text-align: center;
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 90%;
+    align-items: center;
+  }
 }
