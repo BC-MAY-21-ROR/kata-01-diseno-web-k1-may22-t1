@@ -1,0 +1,18 @@
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    margin: 0 auto;
+    background-color: $primary-pink-button;
+    font-family: $font-family-heading;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    width: 270px;
+    height: 45px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.7px;
+  }
+}
