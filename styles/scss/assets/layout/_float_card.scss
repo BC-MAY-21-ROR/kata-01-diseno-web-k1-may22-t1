@@ -1,0 +1,23 @@
+.float-card {
+    width: 100%;
+    // min-width: 335px;
+    height: 150px;
+    box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+    border-radius: 10px;
+    margin-right: 00px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: -95px;
+
+    h3 {
+        font-family: $first-font;
+        font-size: 17px;
+        text-align: center;
+        color: black;
+    }
+}
