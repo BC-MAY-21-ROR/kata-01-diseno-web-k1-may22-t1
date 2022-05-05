@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
   button {
     margin: 0 auto;
     background-color: $primary-pink-button;
-    font-family: $font-family-heading;
+    font-family: $first-font;
     color: white;
     border-radius: 30px;
     border: none;

@@ -1,11 +1,16 @@
 header {
   background-image: url("../../../images/bg-hero-mobile.svg");
+  margin: 0 0;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding: 30px 0 30px 0;
+
+
 
   &__logo img {
     width: 110px;
@@ -25,19 +30,22 @@ header {
 }
 
 .title-header {
+  padding-top: 30px;
   font-size: 28px;
   font-weight: bold;
-  font-family: $font-family-heading;
+  font-family: $first-font;
   text-align: center;
 }
 
 .title-text {
-  font-family: $font-family-body;
+  padding-top: 30px;
+  font-family: $second-font;
   font-size: 19px;
   text-align: center;
 }
 
 .header-image {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
