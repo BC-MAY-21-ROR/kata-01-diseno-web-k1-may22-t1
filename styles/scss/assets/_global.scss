@@ -1,7 +1,16 @@
-@import '_reset.scss';
-@import '_variables.scss';
-@import '_tipography.scss';
-@import '_buttons.scss';
-@import '_content.scss';
-@import '_header.scss';
-@import '_cards.scss';
+// Base
+@import './base/reset';
+@import './base/variables';
+@import './base/tipography';
+
+// Layout
+@import './layout/header';
+
+// Components
+@import './components/buttons';
+@import './components/cards';
+
+// Abstracts
+@import './abstracts/utilities';
+
+// @import '_content.scss';
