@@ -1,0 +1,68 @@
+// Creation of mixins.
+
+@mixin centerX() {
+  left: 50%;
+  transform: translateX(-50%);
+};
+
+@mixin centerY() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*
+  RESPONSIVE:
+  
+  Breakpoints:
+  big-desktop: 112.5em    // 1800px
+  desktop: 75em           // 1500px
+  laptop: 62.5em          // 1000px
+  tablet: 43.75em         // 700px
+  phone: 31.25em          // 500px
+  sm-phone: 21.875em      // 350px
+  
+  THIS IS TEMPORAL WHILE THE DESIGN IS DEVELOPED AND MIGHT BE CHANGED IN TIME.
+  
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm-phone {
+    @media only screen and (max-width: 21.875em) { @content };
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 31.25em) { @content };
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 43.75em) { @content };
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 62.5em) { @content };
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 93.75em) { @content };
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: 112.5em) { @content };
+  }
+}
+
+@mixin respondMin($breakpoint) {
+  @if $breakpoint == sm-phone {
+    @media only screen and (min-width: 21.875em) { @content };
+  }
+  @if $breakpoint == phone {
+    @media only screen and (min-width: 31.25em) { @content };
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 43.75em) { @content };
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 62.5em) { @content };
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 93.75em) { @content };
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content };
+  }
+}
