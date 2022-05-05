@@ -5,7 +5,7 @@ section {
   display: flex;
   box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
   border-radius: 10px;
-  margin: 40px;
+  margin: 20px;
 
   &__section {
     display: flex;
@@ -21,50 +21,34 @@ section {
       img {
         display: block;
         width: 250px;
-        height: 150px;
-        object-fit: cover;
+        height: 200px;
+        object-fit: contain;
       }
     }
 
     &--info {
-      padding: 2rem;
-      margin: 10px auto;
+      padding: 2rem 1rem;
+      margin: 0px auto 10px auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
       .title {
-        font-weight: $first-font;
-        // font-weight: "Popins";
+        font-family: $first-font;
         color: #000;
-        font-size: 30px;
+        font-size: 22px;
         padding: 1rem;
       }
 
       .text {
-        padding-top: 1rem;
-        font-size: 18px;
+        font-size: 14px;
         text-align: center;
         font-family: $second-font;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.5px;
         color: $neutral-grayish-blue-header;
       }
     }
   }
 }
-
-// Hey, chicos. El dia de manana, que es hoy.
-// Voy ausentarme. (No, vaya a pensar que me safado del bootcamp ). Debo atender un asunto urgente. 
-
-// Note: Realice unas ligeras modificaciones en el main -> section -> cards. Las cartas se ven como la muestra. Little contribucion para el proyecto. Si descomentan las demas cartas en el index.html veran el resultado.
-
-// Una cosa mas sobre la fuente en open sans:  actualmente lo declaramos de esta manera 'Open-Sans', y esto no funciona. Por lo tanto, debemos declararlo de esta manera: 'Open Sans'. y esto funciona. 
-
-// Adicional en el archivo [hack-terminal](../../node-terminal.md) si gustan probar y conocer mas sobre el tema.
-
-// He subido la pagina al servicio de github-pages. este es el link para que pueden verlo y ofertarlo. [website-roby22](https://bc-may-21-ror.github.io/kata-01-diseno-web-k1-may22-t1/)
-
-// modificacion y cada merge que se realiza a la rama develop. Esta se carga automaticamente en la pagina de github-pages. Le toma aproximadamente 30 segundos para cargar.
-
-// Nos vemos el viernes. 
