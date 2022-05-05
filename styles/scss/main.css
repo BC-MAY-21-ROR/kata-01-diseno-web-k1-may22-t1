@@ -45,7 +45,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -59,14 +59,21 @@ table {
 }
 
 .primary-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 30px;
 }
+
 .primary-button button {
   margin: 0 auto;
-  background-color: hsl(322deg, 100%, 66%);
+  background-color: #ff52bf;
   font-family: "Poppins", sans-serif;
   color: white;
   border-radius: 30px;
@@ -78,25 +85,30 @@ table {
   letter-spacing: 0.7px;
 }
 
-.container {
-  margin: 30px 30px;
-}
-
 header {
   background-image: url("../../../images/bg-hero-mobile.svg");
   margin: 0 0;
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px 0 30px 0;
 }
+
 .navbar__logo img {
   width: 110px;
   height: 18px;
 }
+
 .navbar__button button {
   width: 110px;
   height: 30px;
@@ -104,7 +116,8 @@ header {
   font-weight: 600;
   font-size: 13px;
   border: none;
-  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+  -webkit-box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+          box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
 }
 
 .title-header {
@@ -124,13 +137,22 @@ header {
 
 .header-image {
   padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header-image img {
   width: 90%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -138,49 +160,129 @@ section {
 }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+  -webkit-box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+          box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
   border-radius: 10px;
   margin: 40px;
 }
+
 .cards__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1rem;
 }
+
 .cards__section--img {
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .cards__section--img img {
   display: block;
   width: 250px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .cards__section--info {
   padding: 2rem;
   margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .cards__section--info .title {
   font-weight: "Poppins", sans-serif;
   color: #000;
   font-size: 30px;
   padding: 1rem;
 }
+
 .cards__section--info .text {
   padding-top: 1rem;
   font-size: 18px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5rem;
-  color: hsl(208deg, 11%, 55%);
+  color: #808d99;
 }
 
+.footer {
+  background-color: #00252e;
+  color: #ebfbff;
+}
+
+.footer__logo__img {
+  width: 200px;
+  background-color: aliceblue;
+}
+
+.footer__information {
+  padding: 20px 0 30px 0;
+}
+
+.footer__information__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px 0 20px;
+}
+
+.footer__links li {
+  padding: 10px 0 10px 20px;
+}
+
+.footer__links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.footer__copyright p {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
 /*# sourceMappingURL=main.css.map */
