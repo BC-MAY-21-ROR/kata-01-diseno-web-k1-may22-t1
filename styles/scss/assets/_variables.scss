@@ -6,11 +6,11 @@ $neutral-very-pale-cyan-body: hsl(193, 100%, 96%);
 $neutral-very-dark-cyan-footer: hsl(192, 100%, 9%);
 $neutral-grayish-blue-header: hsl(208, 11%, 55%);
 
-
 $first-font: 'Poppins', sans-serif;
-$second-font: 'Open-Sans', sans-serif;
-$first-font: 'Poppins', sans-serif;
-$second-font: 'Open-Sans', sans-serif;
+$second-font: 'Open Sans', sans-serif;
 
-$first-wg: 400;
-$se-wg: 400;
+// change the font-weight
+
+$first-wg: 700;
+$second-wg: 600;
+$three-wg: 400;
