@@ -1,10 +1,10 @@
 .float-card {
-    width: 100%;
+    width: 90%;
+    margin-left: 18px;
     // min-width: 335px;
     height: 150px;
     box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
     border-radius: 10px;
-    margin-right: 00px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     position: absolute;
     z-index: 1;
     background-color: white;
-    top: -95px;
+    top: -75px;
 
     h3 {
         font-family: $first-font;
