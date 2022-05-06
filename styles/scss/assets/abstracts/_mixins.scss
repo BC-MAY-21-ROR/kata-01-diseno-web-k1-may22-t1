@@ -66,3 +66,17 @@
     @media only screen and (min-width: 112.5em) { @content };
   }
 }
+
+
+// @mixin mobile {
+//   @media only screen and (min-width: 375px) {
+//     @content;
+//   }
+// }
+
+
+// @mixin desktop {
+//   @media only screen and (min-width: 1024px) {
+//     @content;
+//   }
+// }

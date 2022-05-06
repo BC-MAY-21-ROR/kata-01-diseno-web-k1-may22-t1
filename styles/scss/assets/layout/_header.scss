@@ -61,3 +61,24 @@ header {
     align-items: center;
   }
 }
+
+@include respondMin(phone) {
+  // header
+  .mg-desktop {
+    display: flex;
+    padding-bottom: 40px;
+
+    .title,
+    .title-text {
+      text-align: left;
+    }
+  }
+}
+
+
+@include respondMin(desktop) {
+  // header 
+  .mg-desktop {
+    display: flex;
+  }
+}
