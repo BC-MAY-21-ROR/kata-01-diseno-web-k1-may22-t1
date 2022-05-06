@@ -52,3 +52,22 @@ section {
     }
   }
 }
+
+@include respondMin(phone) {
+  .cards {
+    &__section {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  section div:nth-child(2) {
+    .cards {
+      &__section {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@include respondMin(desktop) {
+}
