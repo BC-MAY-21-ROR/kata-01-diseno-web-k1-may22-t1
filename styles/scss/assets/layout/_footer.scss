@@ -1,70 +1,101 @@
 footer {
-    margin-top: 150px;    
+  margin-top: 150px;
 }
 .footer {
-    position: relative;
-    background-color: $neutral-very-dark-cyan-footer;
-    color: $neutral-very-pale-cyan-body;
-    padding-top: 100px;
-    font-family: $second-font;
-    z-index: 0;
-    
+  position: relative;
+  background-color: $neutral-very-dark-cyan-footer;
+  color: $neutral-very-pale-cyan-body;
+  padding-top: 100px;
+  font-family: $second-font;
+  z-index: 0;
 
-    &__logo {
-        
-        &__img {
-            width: 200px;
-            padding-left: 20px;
-        }
+  &__logo {
+    &__img {
+      width: 200px;
+      padding-left: 20px;
     }
+  }
 
-    &__information {
-        padding: 20px 0 30px 0;
+  &__information {
+    padding: 20px 0 30px 0;
 
-        &__sub {
-            display: flex;
-            gap: 30px;
-            padding: 10px 20px 15px 20px;
+    &__sub {
+      display: flex;
+      gap: 30px;
+      padding: 10px 20px 15px 20px;
 
-            img {
-                width: 20px;
-                height: 20px;
-            }
+      img {
+        width: 20px;
+        height: 20px;
+      }
 
-            p {
-                line-height: 23px;
-            }
-        }
+      p {
+        line-height: 23px;
+      }
     }
+  }
 
-    &__links {
+  &__links {
+    li {
+      padding: 10px 0 10px 20px;
 
-        li{
-            padding: 10px 0 10px 20px;
-
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 20px;
-            }
-        }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
     }
+  }
 
-    &__social-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px 0;
+  &__social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
 
+  &__copyright {
+    p {
+      text-align: center;
+      font-size: 10px;
+      padding-bottom: 20px;
     }
+  }
+}
 
-    &__copyright {
+@include respondMin(phone) {
+  .footer {
+    padding-bottom: 20px;
+  }
 
-        p {
-            text-align: center;
-            font-size: 10px;
-            padding-bottom: 20px;
-        }
+  .footer-grid-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+
+  .footer__links--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__social-icons {
+    padding-top: 0;
+  }
+
+  .footer__copyright {
+    p {
+      text-align: right;
     }
+  }
+}
+@include respond(phone) {
+  .footer {
+    display: grid;
+  }
+
+  .footer-grid {
+    grid-template-columns: 3;
+  }
 }

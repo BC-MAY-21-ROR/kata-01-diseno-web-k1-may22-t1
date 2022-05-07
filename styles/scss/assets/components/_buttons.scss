@@ -1,7 +1,4 @@
 .primary-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 30px;
   button {
     margin: 0 auto;
@@ -15,5 +12,18 @@
     font-weight: bold;
     line-height: 1;
     letter-spacing: 0.7px;
+    &:hover {
+      background-color: #ff9bdb;
+      color: white;
+    }
+  }
+}
+
+@include respondMin(phone) {
+  .convert-button {
+    justify-content: flex-start;
+    button {
+      margin: 0;
+    }
   }
 }

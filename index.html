@@ -12,9 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Huddle landing page with alternating feature blocks
-    </title>
+    <title>Reileros 01</title>
     <!-- <script src="https://kit.fontawesome.com/e8f182470f.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./styles/scss/main.css" />
 
@@ -36,7 +34,7 @@
       </nav>
 
       <div class="mg-center mg-desktop">
-        <div class="title">
+        <div class="title mg-top">
           <p class="title-header">Build The Community Your Fans Will Love</p>
 
           <p class="title-text">
@@ -44,7 +42,7 @@
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <div class="primary-button">
+          <div class="convert-button primary-button flex-center">
             <button>Get Started For Free</button>
           </div>
         </div>
@@ -82,7 +80,10 @@
         <div class="cards">
           <div class="cards__section">
             <div class="cards__section--img">
-              <img src="/images/illustration-flowing-conversation.svg" alt="" />
+              <img
+                src="./images/illustration-flowing-conversation.svg"
+                alt=""
+              />
             </div>
             <div class="cards__section--info">
               <p class="title">Flowing Conversation</p>
@@ -99,7 +100,7 @@
         <div class="cards">
           <div class="cards__section">
             <div class="cards__section--img">
-              <img src="/images/illustration-your-users.svg" alt="" />
+              <img src="./images/illustration-your-users.svg" alt="" />
             </div>
             <div class="cards__section--info">
               <p class="title">Your Users</p>
@@ -118,67 +119,78 @@
       <div class="footer">
         <div class="float-card">
           <h3>Ready To Build Your Community?</h3>
-          <div class="primary-button">
+          <div class="primary-button flex-center">
             <button>Get Started For Free</button>
           </div>
         </div>
-        <div class="footer__logo">
+        <div class="footer__logo mg-center-desktop">
           <img
             class="footer__logo__img color-invert"
-            src="/images/logo.svg"
+            src="./images/logo.svg"
             alt=""
           />
         </div>
-        <!-- footer - information -->
-        <div class="footer__information">
-          <div class="footer__information__sub">
-            <img src="/images/icon-location.svg" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+        <div class="footer-grid mg-center-desktop">
+          <!-- footer - information -->
+          <div class="footer-grid-columns">
+            <div>
+              <div class="footer__information">
+                <div class="footer__information__sub">
+                  <img src="./images/icon-location.svg" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="footer__information__sub">
+                  <img src="./images/icon-phone.svg" alt="" />
+                  <p>+1-543-123-4567</p>
+                </div>
+                <div class="footer__information__sub">
+                  <img src="./images/icon-email.svg" alt="" />
+                  <p>example@huddle.com</p>
+                </div>
+              </div>
+            </div>
+            <!-- footer - links -->
+            <div class="footer__links">
+              <ol class="footer__links--flex">
+                <div>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">What we do</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </div>
+                <div>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </div>
+              </ol>
+            </div>
+            <!-- footer - social_icons -->
+            <div class="footer__social-icons">
+              <img
+                class="color-invert"
+                src="./images/facebook-icon.svg"
+                alt="facebook-icon"
+              />
+              <img
+                class="color-invert"
+                src="./images/twitter-icon.svg"
+                alt="twitter-icon"
+              />
+              <img
+                class="color-invert"
+                src="./images/instagram-logo.svg"
+                alt="instagram-icon"
+              />
+            </div>
+            <!-- footer - copyright -->
           </div>
-          <div class="footer__information__sub">
-            <img src="/images/icon-phone.svg" alt="" />
-            <p>+1-543-123-4567</p>
+          <div class="footer__copyright">
+            <p>&copy;Copyright 2022 Huddle. All rights reserved. Reileros 01</p>
           </div>
-          <div class="footer__information__sub">
-            <img src="/images/icon-email.svg" alt="" />
-            <p>example@huddle.com</p>
-          </div>
-        </div>
-        <!-- footer - links -->
-        <div class="footer__links">
-          <ol>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">What we do</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ol>
-        </div>
-        <!-- footer - social_icons -->
-        <div class="footer__social-icons">
-          <img
-            class="color-invert"
-            src="/images/facebook-icon.svg"
-            alt="facebook-icon"
-          />
-          <img
-            class="color-invert"
-            src="/images/twitter-icon.svg"
-            alt="twitter-icon"
-          />
-          <img
-            class="color-invert"
-            src="/images/instagram-logo.svg"
-            alt="instagram-icon"
-          />
-        </div>
-        <!-- footer - copyright -->
-        <div class="footer__copyright">
-          <p>&copy;Copyright 2022 Huddle. All rights reserved. Reileros 01</p>
         </div>
       </div>
     </footer>

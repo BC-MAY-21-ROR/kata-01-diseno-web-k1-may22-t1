@@ -1,7 +1,25 @@
 .mg-center {
-  margin: 0px 30px;
+  margin: 0px 50px;
+}
+
+.mg-center-desktop{
+  margin: 0px 60px;
+}
+
+.mg-center-lx{
+  margin: 0px 90px;
 }
 
 .color-invert {
   filter: brightness(0) invert(1);
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mg-top{
+  margin-top: 100px;
 }
